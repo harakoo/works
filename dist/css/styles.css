@@ -56,7 +56,7 @@ fa fa-bars {
 }
 /* Style the hamburger menu */
 .topnav a.icon {
-  background:white;
+  /* background:F1BC32; */
   color: #21273D;
   display: block;
   position: absolute;
