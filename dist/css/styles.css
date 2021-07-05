@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito|PT+Serif:400,400i&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
 
 .about span,
 .cv span,
 .works .works__header span {
-  color: #0013FF;
+  color: #5784BA;
   font-size: 12px;
   font-family: "Nunito";
 }
@@ -19,8 +19,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Source Serif Pro', serif;
-  background-color: #FEFFFE;
+  font-family: "Noto Sans JP";
+  background-color: white;
   color: #21273D;
   padding: 30px 40px;
   line-height: 1.5;
@@ -28,7 +28,7 @@ body {
 header {
   font-size: 46px;
   letter-spacing: 1px;
-  margin-bottom: 175px;
+  margin-bottom: 90px;
 }
 .works {
   margin-bottom: 80px;
@@ -51,11 +51,99 @@ a:hover {
   font-size: 30px;
 }
 .cv {
-  margin-bottom: 120px;
+  margin-bottom: 90px;
 }
 .about {
   padding-bottom: 80px;
 }
 a {
-  color: #0013FF;
+  color: #F1BC32
 }
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.underlined {
+  -webkit-text-stroke: 1px black;
+  color: white;
+  flex: 1;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #F1BC32 0, #F1BC32 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background 0.5s;
+}
+.underlined:hover {
+  background-size: 100% 100%;
+}
+.underlined--yellow {
+  background-position: 0 -0.1em;
+  background-image: linear-gradient(to right, #FEF5D4 0, #FEF5D4 100%);
+}
+.underlined--orange {
+  background-position: 0 -0.1em;
+  background-image: linear-gradient(to right, #FFD6AA 0, #FFD6AA 100%);
+}
+.underlined--pink {
+  background-position: 0 -0.1em;
+  background-image: linear-gradient(to right, #EFBAD6 0, #EFBAD6 100%);
+}
+.underlined--purple {
+  background-position: 0 -0.1em;
+  background-image: linear-gradient(to right, #DADAFC 0, #DADAFC 100%);
+}
+strong {
+  position: relative;
+}
+strong::after {
+  content: '';
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+  z-index: -1;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+p > strong {
+  font-weight: 400;
+}
+p > strong::after {
+  bottom: -0.2rem;
+  height: 0.5rem;
+  left: -0.25rem;
+  right: -0.25rem;
+}
+
+strong, a:link {
+  text-decoration: none;
+}
+
+strong,  a:visited {
+  text-decoration: none;
+}
+
+strong, a:hover {
+  text-decoration: none;
+}
+
+strong,  a:active {
+  text-decoration: none;
+}
+
